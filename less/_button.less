@@ -1,0 +1,64 @@
+@import "mix.less";
+
+.button {
+  width: 180px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: #ffffff;
+
+    & .button__text {
+      color: #c0301c;
+    }
+  }
+
+  &:active {
+    background-color: #ffffff;
+
+    & .button__text {
+      color: #631bb4;
+    }
+
+  }
+
+  // &:default {
+  //   color: gray;
+  //   background-color: #ffffff;
+  // }
+  &__text {
+    margin: 0;
+    text-transform: uppercase;
+    word-break: break-all;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .button {
+    width: 130px;
+    padding: 7px;
+    margin: 10px;
+
+    &--perfect {
+      width: 130px;
+    }
+
+    &__txt {
+      font-size: 10px;
+
+      &--perfect {
+        font-size: 10px;
+      }
+    }
+  }
+}
