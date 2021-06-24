@@ -1,0 +1,24 @@
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 100px 0;
+}
+.services__offers {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.services__text {
+  width: 100%;
+  margin: 28px 0 70px 0;
+}
+.services__title {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 108px 0 0 0;
+}
