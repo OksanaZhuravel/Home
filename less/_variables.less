@@ -10,6 +10,24 @@
   background-color: #ffffff;
 }
 
+.title {
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #555555;
+    margin: 23px 0 0 0;
+  }
+}
+
+
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {

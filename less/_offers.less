@@ -1,0 +1,51 @@
+@import "mix.less";
+
+.offers {
+  max-width: 400px;
+  margin: 0 22px 0 22px;
+
+  &:hover .offers__img,
+  &:hover .offers__title {
+    transform: scale(1.2);
+    color: #c0301c;
+  }
+
+  &__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #dddddd;
+  }
+
+  &__icon {
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &--one {
+      background-image: url("../img/icon1.svg");
+      background-color: #c0301c;
+    }
+
+    &--two {
+      background-image: url("../img/icon2.svg");
+    }
+
+    &--three {
+      background-image: url("../img/icon3.svg");
+    }
+  }
+
+  &__title {
+    margin: 29px 0 0 0;
+    font-family: "montserrat", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 366px;
+    margin: 13px 0 0 0;
+  }
+}
