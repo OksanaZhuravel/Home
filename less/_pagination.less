@@ -1,0 +1,45 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    display: flex;
+    width: 35px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    background-color: #555555;
+    position: absolute;
+    bottom: 300px;
+    right: 230px;
+
+    &:hover {
+      background-color: #c0301c;
+      opacity: 1;
+    }
+
+    &--activ {
+      background-color: #c0301c;
+      opacity: 1;
+    }
+
+    &--right {
+      left: 230px;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 8px;
+    height: 14px;
+    background-image: url("../img/pagleft.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &--right {
+      background-image: url("../img/pagright.svg");
+    }
+  }
+}

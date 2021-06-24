@@ -1,21 +1,83 @@
 @import "mix.less";
 
 .pic {
-  &__btn {
-    &--fac {}
+  position: relative;
 
-    &--google {}
-
-    &--linc {}
-
-    &--tw {}
+  &:hover .pic__btn {
+    display: block;
   }
 
-  &__foto {}
+  &:hover .pic__btn:hover {
+    background-color: #c0301c;
+  }
 
-  &__name {}
+  &:hover .pic__foto {
+    background-color: #555555;
+    filter: brightness(50%);
+  }
 
-  &__position {}
+  &:hover .pic__wrap {
+    transform: scale(1.5);
+    color: #c0301c;
+  }
 
-  &__wrap {}
+
+  &__btn {
+    width: 28px;
+    height: 28px;
+    display: none;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    bottom: 30%;
+    margin: 0 3px;
+
+    &--fac {
+      background-image: url("../img/fac.svg");
+      left: 25%;
+    }
+
+    &--google {
+      background-image: url("../img/google.svg");
+      left: 35%;
+    }
+
+    &--linc {
+      background-image: url("../img/link.svg");
+      left: 45%;
+    }
+
+    &--tw {
+      background-image: url("../img/twitter.svg");
+      left: 55%;
+    }
+  }
+
+  &__foto {
+    width: 100%;
+    background-color: #bbbbbb;
+  }
+
+  &__name {
+    font-family: "montserrat", Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin: 20px 0 0 0;
+  }
+
+  &__position {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin: 15px 0 0 0;
+  }
+
+  &__wrap {
+    width: 100%;
+  }
 }
