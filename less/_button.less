@@ -25,13 +25,38 @@
     & .button__text {
       color: #631bb4;
     }
-
   }
 
-  // &:default {
-  //   color: gray;
-  //   background-color: #ffffff;
-  // }
+  &--view {
+    width: 100px;
+    background-color: #ffffff;
+    border-color: transparent;
+
+    &:hover {
+      background-color: #c0301c;
+
+      & .button__text--view {
+        color: #ffffff;
+      }
+
+      & .button__text--view::after {
+        background-image: url("../img/buttonhover.svg");
+      }
+    }
+
+    &:active {
+      background-color: #ffffff;
+
+      & .button__text {
+        color: #631bb4;
+      }
+
+      & .button__text--view::after {
+        background-image: url("../img/buttonactiv.svg");
+      }
+    }
+  }
+
   &__text {
     margin: 0;
     text-transform: uppercase;
@@ -39,6 +64,30 @@
     font-family: 'montserrat', Arial, sans-serif;
     font-weight: 400;
     color: #ffffff;
+
+    &--view {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      font-family: "roboto", Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      color: #c0301c;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 10px;
+        margin: 0 0 0 12px;
+        background-image: url("../img/button.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
   }
 }
 
