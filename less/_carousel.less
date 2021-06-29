@@ -1,0 +1,30 @@
+.carousel {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin: 0 7px 0 7px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    background-color: #dddddd;
+    box-sizing: border-box;
+
+    &:active {
+      border-color: #c0301c;
+      background-color: #c0301c;
+    }
+
+    &:hover {
+      border-color: #631bb4;
+      background-color: #631bb4;
+    }
+
+    &--activ {
+      border-color: #c0301c;
+      background-color: #c0301c;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import "mix.less";
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #f8f8f8;
+  margin: 0;
+  box-sizing: border-box;
+
+  &__carousel {
+    margin: 0 0 100px 0;
+  }
+
+  &__inner {
+    width: 100%;
+    margin: 70px 0 40px 0;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__name {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  &__text {
+    max-width: 755px;
+    font-size: 18px;
+    line-height: 30px;
+    font-style: italic;
+    margin: 0 0 35px 0;
+  }
+
+  &__link {
+    margin: 100px 0 0 0;
+    display: block;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+
+    &--deorham {
+      margin-right: 61px;
+      width: 141px;
+      height: 27px;
+      background-image: url(../img/partners1.svg);
+    }
+
+    &--ratings {
+      margin-right: 60px;
+      width: 121px;
+      height: 49px;
+      background-image: url(../img/partners2.svg);
+    }
+
+    &--malik {
+      margin-right: 66px;
+      width: 142px;
+      height: 17px;
+      background-image: url(../img/partners3.svg);
+    }
+
+    &--bcause {
+      margin-right: 75px;
+      width: 109px;
+      height: 21px;
+      background-image: url(../img/partners4.svg);
+    }
+
+    &--wompily {
+      width: 123px;
+      height: 46px;
+      background-image: url(../img/partners5.svg);
+    }
+  }
+}
