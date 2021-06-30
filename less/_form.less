@@ -1,0 +1,99 @@
+@import "mix.less";
+
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+
+  &__btn {
+    margin: 0 38px 0 0;
+    word-break: break-all;
+    box-sizing: border-box;
+    text-align: center;
+    width: 170px;
+    height: 44px;
+    border: 1px solid #555555;
+    font-family: "roboto", Arial, sans-serif;
+    .mixs (12px, 20px, 400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #555555;
+    outline: none;
+
+    &:hover {
+      border: 1px solid#c0301c;
+      color: #c0301c;
+    }
+
+    &:active {
+      border: 1px solid #631bb4;
+      color: #631bb4;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__style {
+    width: 350px;
+    height: 44px;
+    border: 1px solid #555555;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0 0 21px 0;
+    padding: 0 0 0 17px;
+    outline: none;
+
+    &:hover {
+      border: 1px solid #c0301c;
+    }
+
+    &::placeholder {
+      font-family: "roboto", Arial, sans-serif;
+      .mixs (12px, 20px, 400);
+      color: #555555;
+    }
+
+    &:hover {
+      &::placeholder {
+        font-family: "roboto", Arial, sans-serif;
+        .mixs (12px, 20px, 400);
+        color: #c0301c;
+      }
+    }
+
+    &--message {
+      box-sizing: border-box;
+      width: 770px;
+      height: 104px;
+      resize: none;
+      padding-top: 17px;
+    }
+
+    &--name {
+      margin-right: 30px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 17px 0 0 0;
+
+    &::before {
+      content: " * ";
+      display: block;
+      font-family: "roboto", Arial, sans-serif;
+      .mixs (12px, 20px, 400);
+      color: #c0301c;
+      margin: 0 5px 0 0;
+      position: absolute;
+      top: 0;
+      left: -10px;
+    }
+  }
+}
