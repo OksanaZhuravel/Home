@@ -12,6 +12,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    margin: 0 22px 0 22px;
   }
 
   &__text {
@@ -25,5 +26,23 @@
     flex-flow: column wrap;
     align-items: center;
     margin: 108px 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    margin: 0 0 50px 0;
+
+    &__offers {
+      margin: 10px;
+    }
+
+    &__text {
+      margin: 14px 0 35px 0;
+    }
+
+    &__title {
+      margin: 50px 0 0 0;
+    }
   }
 }

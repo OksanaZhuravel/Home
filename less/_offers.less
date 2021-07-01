@@ -2,7 +2,6 @@
 
 .offers {
   max-width: 400px;
-  margin: 0 22px 0 22px;
 
   &:hover .offers__img,
   &:hover .offers__title {
@@ -47,5 +46,18 @@
   &__text {
     max-width: 366px;
     margin: 13px 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .offers {
+    &__img {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__icon {
+      background-size: 50%;
+    }
   }
 }

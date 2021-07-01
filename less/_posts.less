@@ -39,6 +39,7 @@
   }
 
   &__box {
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
   }
@@ -160,5 +161,57 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .posts {
+
+    &:hover {
+      & .posts__data {
+        transform: scale(1);
+      }
+    }
+
+    &__box {
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+
+    &--hover {
+      &::after {
+        display: none;
+      }
+    }
+
+    &__inner {
+      margin: 0 0 0 19px;
+    }
+
+    &__data {
+      display: none;
+    }
+
+    &__day {
+      font-size: 16px;
+    }
+
+    &__foto {
+      width: 230px;
+      height: 160px;
+    }
+
+    &__name {
+      margin: 10px;
+    }
+
+    &__position {
+      margin: 0 0 0 20px;
+    }
+
+    &__text {
+      max-width: 350px;
+      margin: 10px;
+    }
   }
 }

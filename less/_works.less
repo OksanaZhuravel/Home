@@ -62,6 +62,7 @@
     width: 360px;
     height: 320px;
     z-index: 3;
+    object-fit: cover;
   }
 
   &__item {
@@ -119,5 +120,50 @@
     flex-flow: column wrap;
     align-items: center;
     margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .works {
+    margin: 0 0 10px 0;
+
+    &__foto {
+      width: auto;
+      // height: 320px;
+    }
+
+    &__article {
+      max-width: 100%;
+      max-height: 345px;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &__wrap {
+      margin: 10px 0;
+      justify-content: center;
+    }
+
+    &__item {
+      margin: 0 7px 0 7px;
+    }
+
+    &__list {
+      margin: 28px 0 0 0;
+    }
+
+    &__position {
+      margin: 0 0 10px 0;
+    }
+
+    &__text {
+      margin: 14px 0 35px 0;
+    }
+
+    &__title {
+      margin: 50px 0 0 0;
+    }
   }
 }

@@ -97,3 +97,31 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .form {
+    &__btn {
+      width: 120px;
+      height: auto;
+    }
+
+    &__inner {
+      flex-flow: column wrap;
+      justify-content: center;
+    }
+
+    &__style {
+      width: auto;
+      height: auto;
+
+      &--message {
+        width: auto;
+        height: 80px;
+      }
+
+      &--name {
+        margin-right: 0;
+      }
+    }
+  }
+}
