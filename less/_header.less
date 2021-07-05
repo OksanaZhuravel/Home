@@ -73,18 +73,25 @@
 
 @media (max-width: 480px) {
   .header {
-    display: none;
+    display: flex;
 
     &__wrap {
+      position: relative;
+      justify-content: center;
       margin: 0;
     }
 
     &__navigation {
-      margin: 12px 0 0 0;
+      order: 1;
+      margin: 15px 0 0 0;
     }
 
     &__logo {
-      margin: 15px;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      order: 2;
+      margin: 10px;
     }
 
     &__title {
