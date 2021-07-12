@@ -9,7 +9,7 @@ let isStorageSupport = true;
 let storage = "";
 
 try {
-  storage = localStorage.getItem("bookingEmail");
+  storage = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
 }
